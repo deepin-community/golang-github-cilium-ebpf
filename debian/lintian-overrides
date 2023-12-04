@@ -1,0 +1,22 @@
+# Testdata
+arch-dependent-file-in-usr-share [usr/share/gocode/src/github.com/cilium/ebpf/btf/testdata/*.elf]
+# Testdata
+arch-dependent-file-in-usr-share [usr/share/gocode/src/github.com/cilium/ebpf/testdata/*.bin]
+# Testdata
+arch-dependent-file-in-usr-share [usr/share/gocode/src/github.com/cilium/ebpf/testdata/*.elf]
+# Testdata
+arch-independent-package-contains-binary-or-object [usr/share/gocode/src/github.com/cilium/ebpf/btf/testdata/*.elf]
+# Testdata
+arch-independent-package-contains-binary-or-object [usr/share/gocode/src/github.com/cilium/ebpf/testdata/*.bin]
+# Testdata
+arch-independent-package-contains-binary-or-object [usr/share/gocode/src/github.com/cilium/ebpf/testdata/*.elf]
+# Testdata
+binary-has-unneeded-section * [usr/share/gocode/src/github.com/cilium/ebpf/testdata/*.bin]
+# Testdata
+shared-library-lacks-stack-section [usr/share/gocode/src/github.com/cilium/ebpf/testdata/*.bin]
+# Testdata
+shared-library-lacks-prerequisites [usr/share/gocode/src/github.com/cilium/ebpf/testdata/*.bin]
+# Testdata
+unstripped-binary-or-object [usr/share/gocode/src/github.com/cilium/ebpf/btf/testdata/*.elf]
+# Testdata
+unstripped-binary-or-object [usr/share/gocode/src/github.com/cilium/ebpf/testdata/*.elf]
