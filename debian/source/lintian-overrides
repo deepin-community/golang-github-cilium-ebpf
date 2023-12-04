@@ -1,0 +1,38 @@
+# Source is btf/testdata/relocs.c
+source-is-missing [btf/testdata/relocs-*.elf]
+# Source is btf/testdata/relocs_read.c
+source-is-missing [btf/testdata/relocs_read-*.elf]
+# Source is btf/testdata/relocs_read_tgt.c
+source-is-missing [btf/testdata/relocs_read_tgt-*.elf]
+# Source is testdata/btf_map_init.c
+source-is-missing [testdata/btf_map_init-*.elf]
+# Source is testdata/freplace.c
+source-is-missing [testdata/freplace-*.elf]
+# Source is testdata/fwd_decl.c
+source-is-missing [testdata/fwd_decl-*.elf]
+# Source is testdata/invalid_btf_map_init.c
+source-is-missing [testdata/invalid_btf_map_init-*.elf]
+# Source is testdata/invalid_map.c
+source-is-missing [testdata/invalid_map-*.elf]
+# Source is testdata/invalid_map_static.c
+source-is-missing [testdata/invalid_map_static-*.elf]
+# Source is testdata/iproute2_map_compat.c
+source-is-missing [testdata/iproute2_map_compat-*.elf]
+# Source is testdata/loader.c
+source-is-missing [testdata/loader-*.elf]
+# Source is testdata/map_spin_lock.c
+source-is-missing [testdata/map_spin_lock-*.elf]
+# Source is testdata/raw_tracepoint.c
+source-is-missing [testdata/raw_tracepoint-*.elf]
+# Source is testdata/strings.c
+source-is-missing [testdata/strings-*.elf]
+# Source is testdata/subprog_reloc.c
+source-is-missing [testdata/subprog_reloc-*.elf]
+# Testdata
+source-is-missing [testdata/vdso*.bin]
+# Testdata
+source-contains-prebuilt-binary [btf/testdata/*.elf]
+# Testdata
+source-contains-prebuilt-binary [testdata/*.elf]
+# Testdata
+source-contains-prebuilt-binary [testdata/*.bin]
