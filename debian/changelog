@@ -1,5 +1,91 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-cilium-ebpf (0.11.0-2) unstable; urgency=medium
 
-  * Initial release
+  [ Loren M. Lang ]
+  * Fix handling of empty string for build info module.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Shengjing Zhu <zhsj@debian.org>  Thu, 22 Feb 2024 17:34:28 +0800
+
+golang-github-cilium-ebpf (0.11.0-1) unstable; urgency=medium
+
+  [ Loren M. Lang ]
+  * New upstream version 0.11.0
+  * Updated build dependencies
+  * Build requires template file to be in build tree
+  * Update lintian overrides
+  * Updated metadata to assist in cloning and importing upstream releases
+
+  [ Shengjing Zhu ]
+  * Add golang-golang-x-exp-dev to Depends as well
+  * Update Standards-Version to 4.6.2 (no changes)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Wed, 21 Feb 2024 18:24:41 +0800
+
+golang-github-cilium-ebpf (0.9.1-1) unstable; urgency=medium
+
+  * New upstream version 0.9.1
+  * Update Standards-Version to 4.6.1 (no changes)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sat, 20 Aug 2022 22:33:50 +0800
+
+golang-github-cilium-ebpf (0.7.0-1) unstable; urgency=medium
+
+  * New upstream version 0.7.0
+  * Bump golang-golang-x-sys-dev to 0.0~git20211117
+
+ -- Shengjing Zhu <zhsj@debian.org>  Thu, 18 Nov 2021 02:35:51 +0800
+
+golang-github-cilium-ebpf (0.6.2-2) unstable; urgency=medium
+
+  * Upload to unstable
+  * Update Standards-Version to 4.6.0 (no changes)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 20 Aug 2021 23:10:44 +0800
+
+golang-github-cilium-ebpf (0.6.2-1) experimental; urgency=medium
+
+  * New upstream version 0.6.2
+
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 16 Jul 2021 23:12:06 +0800
+
+golang-github-cilium-ebpf (0.6.1-1) experimental; urgency=medium
+
+  * New upstream version 0.6.1
+
+ -- Shengjing Zhu <zhsj@debian.org>  Tue, 22 Jun 2021 15:36:05 +0800
+
+golang-github-cilium-ebpf (0.2.0-1) unstable; urgency=medium
+
+  * New upstream version 0.2.0
+  * Add Multi-Arch hint
+  * Update section to golang
+  * Update Standards-Version to 4.5.1 (no changes)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 20 Nov 2020 00:55:45 +0800
+
+golang-github-cilium-ebpf (0.1.0-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * New upstream version 0.1.0
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sat, 14 Nov 2020 16:10:35 +0800
+
+golang-github-cilium-ebpf (0.0~git20200810.c7f1234-1) unstable; urgency=medium
+
+  * New upstream version 0.0~git20200810.c7f1234
+  * Bump debhelper-compat to 13
+  * Drop golang-golang-x-xerrors-dev
+
+ -- Shengjing Zhu <zhsj@debian.org>  Tue, 18 Aug 2020 00:13:19 +0800
+
+golang-github-cilium-ebpf (0.0~git20200413.48fb86d-2) unstable; urgency=medium
+
+  * Source-only upload for testing migration
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sun, 19 Apr 2020 02:15:10 +0800
+
+golang-github-cilium-ebpf (0.0~git20200413.48fb86d-1) unstable; urgency=medium
+
+  * Initial release (Closes: 956909)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Thu, 16 Apr 2020 22:36:23 +0800

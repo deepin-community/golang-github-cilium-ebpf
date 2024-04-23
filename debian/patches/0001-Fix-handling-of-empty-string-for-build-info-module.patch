@@ -1,0 +1,27 @@
+From: "Loren M. Lang" <lorenl@north-winds.org>
+Date: Thu, 22 Feb 2024 00:45:15 -0800
+Subject: Fix handling of empty string for build info module
+
+While building other packages with this installed, the BuildInfo module
+path is returning as an empty string leading to it creating an invalid
+module import when generating the Go source from the template. Previous
+releases of this module used a constant value instead of trying to
+detect the module path.
+
+---
+ cmd/bpf2go/tools.go | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/cmd/bpf2go/tools.go b/cmd/bpf2go/tools.go
+index d2e020b..0501ee2 100644
+--- a/cmd/bpf2go/tools.go
++++ b/cmd/bpf2go/tools.go
+@@ -85,7 +85,7 @@ func toUpperFirst(str string) string {
+ 
+ func currentModule() string {
+ 	bi, ok := debug.ReadBuildInfo()
+-	if !ok {
++	if !ok || bi.Main.Path == "" {
+ 		// Fall back to constant since bazel doesn't support BuildInfo.
+ 		return "github.com/cilium/ebpf"
+ 	}
