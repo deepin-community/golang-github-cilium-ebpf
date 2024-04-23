@@ -1,3 +1,10 @@
+golang-github-cilium-ebpf (0.11.0-2deepin1) unstable; urgency=medium
+
+  * cmd/bpf2go: Make LoongArch a supported target.
+  * https://github.com/cilium/ebpf/pull/1296.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Tue, 23 Apr 2024 20:03:22 +0800
+
 golang-github-cilium-ebpf (0.11.0-2) unstable; urgency=medium
 
   [ Loren M. Lang ]
