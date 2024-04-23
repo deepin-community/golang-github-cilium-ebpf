@@ -1,0 +1,6 @@
+---
+Bug-Database: https://github.com/cilium/ebpf/issues
+Bug-Submit: https://github.com/cilium/ebpf/issues/new
+Documentation: https://ebpf-go.dev/
+Repository-Browse: https://github.com/cilium/ebpf
+Repository: https://github.com/cilium/ebpf.git

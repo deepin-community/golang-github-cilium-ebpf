@@ -1,4 +1,14 @@
 #!/usr/bin/make -f
 
+export DH_GOLANG_INSTALL_EXTRA := cmd/bpf2go/output.tpl
+
 %:
-	dh $@
+	dh $@ --buildsystem=golang --with=golang
+
+# In most environments, tests are running in schroot,
+# which has no permission to run bpf programs.
+override_dh_auto_test:
+	-dh_auto_test
+
+override_dh_auto_install:
+	dh_auto_install -- --no-binaries
