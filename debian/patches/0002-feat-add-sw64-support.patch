@@ -1,0 +1,22 @@
+From a47c60549e2ca23bfb9a092dbf45b3f8d1d57617 Mon Sep 17 00:00:00 2001
+From: hudeng <hudeng@deepin.org>
+Date: Wed, 14 May 2025 10:28:26 +0800
+Subject: [PATCH] feat: add sw64 support
+
+---
+ internal/endian_le.go | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/internal/endian_le.go b/internal/endian_le.go
+index fde4c55..d71b04e 100644
+--- a/internal/endian_le.go
++++ b/internal/endian_le.go
+@@ -1,4 +1,4 @@
+-//go:build 386 || amd64 || amd64p32 || arm || arm64 || loong64 || mipsle || mips64le || mips64p32le || ppc64le || riscv64
++//go:build sw64 || 386 || amd64 || amd64p32 || arm || arm64 || loong64 || mipsle || mips64le || mips64p32le || ppc64le || riscv64
+ 
+ package internal
+ 
+-- 
+2.45.2
+
